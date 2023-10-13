@@ -19,12 +19,12 @@ public class BuscaLinear {
         System.out.println(vetor);
 
         int primeiroElemento = 45;
-        int buscarElemento = vetor.busca(primeiroElemento);
+        int buscarElemento = vetor.buscaLinear(primeiroElemento);
         System.out.printf("Buscando o elemento %d...\n", primeiroElemento);
         System.out.printf("O elemento buscado se encontra no índice: %d\n\n", buscarElemento);
 
         int segundoElemento = 4;
-        buscarElemento = vetor.busca(segundoElemento);
+        buscarElemento = vetor.buscaLinear(segundoElemento);
         System.out.printf("Buscando o elemento %d...\n", segundoElemento);
         System.out.printf("O elemento buscado se encontra no índice: %d\n\n", buscarElemento);
     }

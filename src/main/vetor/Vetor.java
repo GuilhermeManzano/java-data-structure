@@ -32,7 +32,7 @@ public class Vetor {
         }
     }
 
-    public int busca(int elementoBuscado) {
+    public int buscaLinear(int elementoBuscado) {
         for (int i = 0; i < elementos.length; i++) {
             if (elementos[i] == elementoBuscado) {
                 return i;
@@ -42,12 +42,29 @@ public class Vetor {
         throw new IllegalArgumentException("O número " + elementoBuscado + " não está no vetor.");
     }
 
-    public void remove(int posicao) {
-        if(!(posicao >= 0 && posicao < tamanho)) {
-            throw new IllegalArgumentException("Posição inválida");
+    public int buscaBinaria(int elementoBuscado) {
+        int inicio = 0;
+        int fim = elementos.length - 1;
+        int meio;
+
+        while(inicio <= fim) {
+            meio = (int) ((inicio + fim) / 2);
+            if (elementos[meio] == elementoBuscado) {
+                return meio;
+            } else if (elementos[meio] < elementoBuscado) {
+                inicio = meio + 1;
+            } else {
+                fim = meio - 1;
+            }
         }
 
-        for(int i = posicao; i < this.tamanho - 1; i++) {
+        throw new IllegalArgumentException("O número " + elementoBuscado + " não está no vetor.");
+    }
+
+    public void remove(int elemento) {
+        int posicaoElemento = buscaBinaria(elemento);
+
+        for(int i = posicaoElemento; i < this.tamanho - 1; i++) {
             this.elementos[i] = this.elementos[i+1];
         }
         this.tamanho--;
