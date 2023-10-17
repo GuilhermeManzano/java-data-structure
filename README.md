@@ -4,3 +4,12 @@ This project aims to create implementation of Data Structure using Java language
 
 ### Vetor (Array)
 https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/vetor
+
+### Pilha (Stack)
+https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/pilha
+
+### Fila (Queue)
+WIP
+
+### Lista Encadeada (Linked List)
+WIP
