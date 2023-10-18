@@ -9,7 +9,13 @@ https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/vetor
 https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/pilha
 
 ### Fila (Queue)
+https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/fila
+
+### Lista Ligada ou Encadeada (Linked List)
 WIP
 
-### Lista Encadeada (Linked List)
+### Lista Duplamente Ligada ou Encadeada (Doubly Linked List)
+WIP
+
+### Lista Circular Ligada ou Encadeada (Linked Circular List)
 WIP
