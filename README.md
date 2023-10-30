@@ -14,8 +14,5 @@ https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/fila
 ### Lista Ligada ou Encadeada (Linked List)
 https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/listaEncadeada
 
-### Lista Duplamente Ligada ou Encadeada (Doubly Linked List)
-WIP
-
-### Lista Circular Ligada ou Encadeada (Linked Circular List)
-WIP
+### Bubble Sort
+https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/bubbleSort
