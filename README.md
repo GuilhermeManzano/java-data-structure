@@ -16,3 +16,6 @@ https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/lista
 
 ### Bubble Sort
 https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/bubbleSort
+
+### Insertion Sort
+https://github.com/GuilhermeManzano/java-data-structure/tree/main/src/main/insertionSort
