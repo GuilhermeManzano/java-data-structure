@@ -1,14 +1,17 @@
-package main.insertionSort;
+package main.selectionSort;
 
-import static main.insertionSort.AlgoritmoInsertionSort.sort;
+import java.util.Arrays;
+import static main.selectionSort.AlgoritmoSelectionSort.sort;
 
 public class Teste {
     public static void main(String[] args) {
-        int[] vetor = new int[100_000];
+        int[] vetor = new int[10];
 
         for (int i = 0; i < vetor.length ; i++) {
             vetor[i] = (int) (Math.random() * vetor.length);
         }
+
+        System.out.println("Vetor desordenado: " + Arrays.toString(vetor));
 
         long start = System.nanoTime();
         sort(vetor);
@@ -16,5 +19,7 @@ public class Teste {
 
         long duration = (end-start) / 1_000_000;
         System.out.println("Duration: " + duration + " ms");
+
+        System.out.println("Vetor ordenado: " + Arrays.toString(vetor));
     }
 }
