@@ -33,22 +33,20 @@ public final class AlgoritmoHeapSort {
         // cisamos trocar as posicoes
         if (esquerda < n && vetor[esquerda] > vetor[raiz]) {
             raiz = esquerda;
-            trocarElemento(vetor, i, raiz, n);
         }
 
         if (direita < n && vetor[direita] > vetor[raiz]) {
             raiz = direita;
-            trocarElemento(vetor, i, raiz, n);
         }
-    }
 
-    private static void trocarElemento(int[] vetor, int i, int raiz, int n) {
-        int aux = vetor[i];
-        vetor[i] = vetor[raiz];
-        vetor[raiz] = aux;
+        if (raiz != i) {
+            int aux = vetor[i];
+            vetor[i] = vetor[raiz];
+            vetor[raiz] = aux;
 
-        // Como é uma estrutura de árvore, precisamos alterar os demais elementos de forma recursiva.
-        // Para isso, basta chamar o próprio metodo aplicarHeap, passando a raiz no lugar do i.
-        aplicarHeap(vetor, n, raiz);
+            // Como é uma estrutura de árvore, precisamos alterar os demais elementos de forma recursiva.
+            // Para isso, basta chamar o próprio metodo aplicarHeap, passando a raiz no lugar do i.
+            aplicarHeap(vetor, n, raiz);
+        }
     }
 }
