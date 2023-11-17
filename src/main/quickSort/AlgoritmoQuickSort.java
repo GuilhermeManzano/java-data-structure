@@ -4,8 +4,6 @@ public final class AlgoritmoQuickSort {
     public static void sort(int[] vetor, int esquerda, int direita) {
         if (esquerda < direita) {
             int pivo = particao(vetor, esquerda, direita);
-            // quando os elementos i e j se encontrarem, significa que vamos ter um novo pivo e precisamos
-            // chamar a função novamente, de forma recursiva, tanto para o vetor da esquerda quanto o da direita
             sort(vetor, esquerda, pivo);
             sort(vetor, pivo + 1, direita);
         }
@@ -25,7 +23,6 @@ public final class AlgoritmoQuickSort {
                 j--;
             } while (vetor[j] > pivo);
 
-            // significa que os dois elementos se encontraram e precisamos realizar a troca deles
             if (i >= j) {
                 return j;
             }
